@@ -1,9 +1,10 @@
+
 .containerp{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-areas: 
     "titulo titulo logo";
-
+    
     .titulo{
         grid-area: titulo;
         background-color: rgb(255, 255, 255);
@@ -13,17 +14,17 @@
         flex-direction: column;
         justify-content: space-around
         }
-
+        
         .logo{
-            grid-area: logo;
-            background-color: rgb(255, 255, 255);
-            }
+        grid-area: logo;
+        background-color: rgb(255, 255, 255);
+        }
             
-            .logo1{
-                width: 250px;
-                height: 200px;
-                }
-                
+        .logo1{
+        width: 250px;
+        height: 200px;
+        }
+        
 }
 
 nav{
@@ -38,9 +39,9 @@ nav{
         
         li{
             margin-top: 25px;
-
+            
             &hover{
-             color:#e9929e   
+            color:#e9929e   
             }
         }
             
@@ -74,21 +75,22 @@ nav{
         }
         
         .cajas img{
-            width: 230px;
-            border-radius: 10px;
+        width: 230px;
+        border-radius: 10px;
         }
         
         .cajas p{
-            text-align: center;
-            font-size: 20px;
-            font-weight: 600;
-            font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 600;
+        font-family: Arial, Helvetica, sans-serif;
         }
 }
 
 footer{
     background: linear-gradient(to left,#ec8f9b,#eb8d99)
 }
+
 
 //Tratamientos Faciales y Corporales//
 
@@ -98,73 +100,110 @@ footer{
 }
 
 .contenedor{
-    background-color:  #f0bdc4;
+    background-color:#f0bdc4;
     width: 100%;
-    height: 700px;
     display: flex;
     flex-wrap: wrap;
-
-       .caja img{
-       width: 300px;
-       border-radius: 10px;
-       }
-
-       .caja{
-       margin: 25px;
-       }
-
-       .caja p{
-           text-align: center;
-           font-size: 20px;
-           font-weight: 600px;
-           font-family: Arial, Helvetica, sans-serif;
-       }
-      
+    
+        .caja img{
+        width: 300px;
+        border-radius: 10px;
+        }
+        
+        .caja{
+        margin: 25px;
+        }
+        
+        .caja p{
+        text-align: center;
+        font-size: 20px;
+        font-weight: 600px;
+        font-family: Arial, Helvetica, sans-serif;
+        }
 }
 
 //nosostros//
 
 .principal{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: column;
+    
+    .principal h2{
+        text-align: center;
+        padding: 10px;
+    }
+    
+    .principal p{
+        text-align: center;
+        color: black;
+    }
+} 
 
-       .principal1 img{
-       width: 337px;
-       height: 200px;
-       }
 
-       .nosotros{
-        margin: 10px;
-        font-family: Arial, Helvetica, sans-serif;
-       }
+@mixin flex-nowrap{
+        display:flex;
+        flex-wrap: nowrap;
+    }
+.containerc {
+    @include flex-nowrap;
+    }
+    
+    
+    
+//map//
+$map: (
+    color: pink,
+    tFuente: 20px,
+    relleno: 25px,
+    espaciado: 20px,
+    ancho: 50%,
+    pand: 20px,
+);
 
-       .nosotros1{
-        margin: 10px;
-        font-family: Arial, Helvetica, sans-serif;
-       }
+.tarjeta__nosotros{
+    background-color: map-get($map, color);
+    font-size: map-get($map, tFuente);
+    margin: map-get($map, espaciado);
+    width: map-get($map, ancho);
+    padding: map-get($map, pand);
+    }
+    
+.tarjeta__img{
+    width: 400px;
+    border-radius: 10px;
+    text-align: center
 }
+
+//extend//
+.tarjeta__Katys{
+    @extend .tarjeta__nosotros;
+    background-color: #e9929e;
+}
+
 
 //Contacto//
 
 .inicio{
     display: grid;
     grid-template-rows: 1fr;
+    width: 1350px;
+    height: 400px;
     
-       .inicio1{
-        width: 1350px;
-        height: 400px;
-       }
 }
 
 .contacto {
     margin: 10px;
     font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  .ubicacion {
+}
+
+.formulario{
+    text-align: center;
+}
+.ubicacion {
     margin: 10px;
     font-family: Arial, Helvetica, sans-serif;
-  }
+}
+
 
 
 /* Index*/
@@ -224,40 +263,38 @@ footer{
     .cajas p{
     font-size: 13px;
     }
-  }
-  
-  /*Tratamiento faciales*/
-  
-  
-  @media screen and (max-width: 425px) {
-  
-  .Servicios-h2{
-  height: 50px;
-  }
-  
-  .Servicios-h2 h2{
+    }
+
+/*Tratamiento faciales*/
+@media screen and (max-width: 425px) {
+    
+    .Servicios-h2{
+    height: 50px;
+    }
+    
+    .Servicios-h2 h2{
     font-size: 20px;
-  }
-  
-  .contenedor{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  }
-  
-  .caja img{
+    }
+    
+    .contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    }
+    
+    .caja img{
     width: 150px;
-  }
-  
-  .caja p{
+    }
+    
+    .caja p{
     font-size: 15px;
-  }
-  }
-  
-  
-  @media screen and (max-width: 1024px) {
-  
-  .titulo{
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+
+    .titulo{
     font-size: 30px;
     }
     
@@ -312,29 +349,28 @@ footer{
     .cajas p{
         font-size: 18px;
     }
-  }
-  
-  /*Tratamientos Faciales*/
-  @media screen and (max-width: 1024px) {
-  .Servicios-h2{
+}
+
+/*Tratamientos Faciales*/
+@media screen and (max-width: 1024px) {
+    .Servicios-h2{
     height: 20px;
-  }
-  
-  .Servicios-h2 h2{
-  font-size: 30px;
-  }
-  
-  .caja{
+    }
+    
+    .Servicios-h2 h2{
+    font-size: 30px;
+    }
+    
+    .caja{
     height: 50px;
-  }
-  
-  .caja img{
+    }
+    
+    .caja img{
     width: 200px;
-  }
-  
-  .caja p{
+    }
+    
+    .caja p{
     font-size: 18px;
-  }
-  
-  }
-  
+    }
+    
+}
