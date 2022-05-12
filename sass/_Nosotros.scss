@@ -1,0 +1,57 @@
+//nosostros//
+
+.principal{
+    display: flex;
+    flex-direction: column;
+    
+    .principal h2{
+        text-align: center;
+        padding: 10px;
+    }
+    
+    .principal p{
+        text-align: center;
+        color: black;
+    }
+} 
+
+
+@mixin flex-nowrap{
+        display:flex;
+        flex-wrap: nowrap;
+    }
+.containerc {
+    @include flex-nowrap;
+    }
+    
+    
+    
+//map//
+$map: (
+    color: pink,
+    tFuente: 20px,
+    relleno: 25px,
+    espaciado: 20px,
+    ancho: 50%,
+    pand: 20px,
+);
+
+.tarjeta__nosotros{
+    background-color: map-get($map, color);
+    font-size: map-get($map, tFuente);
+    margin: map-get($map, espaciado);
+    width: map-get($map, ancho);
+    padding: map-get($map, pand);
+    }
+    
+.tarjeta__img{
+    width: 400px;
+    border-radius: 10px;
+    text-align: center
+}
+
+//extend//
+.tarjeta__Katys{
+    @extend .tarjeta__nosotros;
+    background-color: #e9929e;
+}

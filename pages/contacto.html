@@ -9,33 +9,21 @@
     y faciales.">
     <meta name="keywords" content="tratamientos faciales, limpieza facial, tratamientos reductivos,
     anticelulitis, depilacion corporal, masaje relajantes, ondas rusas">
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/c3a150fd4e.js" crossorigin="anonymous"></script>
     <!--LOGO-->
     <link rel="shortcut icon" href="../assets/logo/Logokatys.png" type="image/x-icon">
     <!--CSS-->
     <link rel="stylesheet" href="../css/estilos.css">
-    <!--BOOTSTRAP-->
-    <link rel="stylesheet" href="../libs/css/bootstrap.min.css">
     <!--Titulo de la pagina-->
     <title>Katys beauty-Nosostros</title>
 </head>
 <body>
-        <!--Grilla-->
-    <header class="containerp">
-        
-        <h1 class="titulo">ESTETICA Y SPA</h1>
-            
-            <div class="Logo">
-                <img class="logo1" src="../assets/logo/Logokatys.png" alt="logo">
-            </div>
-    </header>
-    
-    <!--MENU-->
-        <nav>
-            <ul>
-                <li>
-                    <a href="../index.html">Inicio</a>
-                </li>
-                
+    <header>
+        <nav class="navbar">
+            <h1 class="titulo">ESTETICA Y SPA</h1>
+                <a href="../index.html"><img class="logo" src="../assets/logo/Logokatys.png" alt="logo"></a>
+            <ul class="menu" >
                 <li>
                     <a href="Nosotros.html">Nosotros</a>
                 </li>
@@ -51,8 +39,18 @@
                 <li>
                     <a href="contacto.html">Contacto</a> 
                 </li>
-            </ul>
+            </ul> 
+            
+            <div class="menu-bar">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            
+            <div class="shop">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            
         </nav>
+    </header>
         
         <main class="Inicio">
             <img src="../assets/imagenes/contacto1.jpg" alt="">
@@ -74,11 +72,6 @@
                     </p>
                     
                     <p>
-                    <label for="apellido">Apellido: </label>
-                    <input type="text" name="apellido" placeholder="ingresatuapellido"> 
-                    </p>
-                    
-                    <p>
                     <label for="Email"> Email:</label>
                     <input type="email" name="Email" placeholder="ingresatuemail">
                     </p>
@@ -88,7 +81,7 @@
                     <input type="tel" name="telefono" placeholder="ingresatutelefono"> 
                     </p>
                     
-                
+                    
                     <h4>Consulta:</h4>
                     
                     <textarea name="comentario" id="" cols="40" rows="10"></textarea>
@@ -100,6 +93,7 @@
                         <input type="reset" value="Borrar">
                         </p>
                     </form>
+                </fieldset>
                 
                 <section class="ubicacion">
                 <h3>
@@ -109,42 +103,26 @@
                 </h3>
                 </section>
                 
-                <footer class="bg-light text-center text-white">
-                    <!-- Grid container -->
-            <div class="container p-4 pb-0">
-                    <!-- Section: Social media -->
-                    <section class="mb-4">
-                
-                <!-- Facebook -->
-                <a
-                class="btn btn-primary btn-floating m-1"
-                style="background-color: #3b5998;"
-                href="https://www.facebook.com/katys.melean.1"> <img src="../assets/imagenes/facebook.png" alt="" width="40px"
-                height="35px"></a>
-                
-                <!-- Instagram -->
-                <a
-                class="btn btn-primary btn-floating m-1"
-                style="background-color: #e6914b;"
-                href="https://www.instagram.com/katysbeauty_/?hl=es"> <img src="../assets/imagenes/instagram-logo.jpg" alt=""
-                width="40px" height="35px"></a>
-                
-                <!-- Whatsapp -->
-                <a
-                class="btn btn-primary btn-floating m-1"
-                style="background-color: #6cd08f;"
-                href="https://api.whatsapp.com/send?phone=56959577434"> <img src="../assets/imagenes/whatsapp.png" alt=""
-                width="40px" height="35px"></a>
-                    </section>
-            </div>
+                <footer>
+                    <div class="redes">
+                        <ul>
+                            <li>
+                            <a href="https://www.instagram.com/katysbeauty_/?hl=es"> <img src="../assets/imagenes/instagram.png" alt=""></a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://www.facebook.com/katys.melean.1"> <img src="../assets/imagenes/facebook .png" alt=""><a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://api.whatsapp.com/send?phone=56959577434"> <img src="../assets/imagenes/whatsapp.png" alt="" ></a>
+                            </li>
+                        </ul>
+                    </div>
                     
-                    <!-- Copyright -->
-                <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-                    © 2022 Copyright:
-                    <a class="text-white" href="#">Katys Beauty</a>
-                </div>
-        </footer>
-                    <script src="../libs/js/bootstrap.min.js"></script>
-
+                    <div class="creado">
+                        <p>Todos los derechos reservados. &copy; Katys Beauty</p>
+                    </div>
+                    </footer>
 </body>
 </html>
