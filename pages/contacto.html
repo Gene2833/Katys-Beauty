@@ -18,11 +18,15 @@
     <!--Titulo de la pagina-->
     <title>Katys beauty-Nosostros</title>
 </head>
-<body>
-    <header>
+<body class="fondo" background="../assets/imagenes/fondo5webp.webp">
+
+    <header class="grilla">
+        <h1 class="titulo"> ESTETICA Y SPA</h1>
+        <a href="../index.html"> <img class="logo" src="../assets/logo/Logokatys.png"><a>
+    </header>
+
+            <!--Menu-->
         <nav class="navbar">
-            <h1 class="titulo">ESTETICA Y SPA</h1>
-                <a href="../index.html"><img class="logo" src="../assets/logo/Logokatys.png" alt="logo"></a>
             <ul class="menu" >
                 <li>
                     <a href="Nosotros.html">Nosotros</a>
@@ -44,70 +48,64 @@
             <div class="menu-bar">
                 <i class="fa-solid fa-bars"></i>
             </div>
-            
-            <div class="shop">
-                <i class="fa-solid fa-cart-shopping"></i>
-            </div>
-            
         </nav>
-    </header>
         
-        <main class="Inicio">
-            <img src="../assets/imagenes/contacto1.jpg" alt="">
-        </main>
         
-        <!--Formulario-->
-        <main class="contacto">
-            <h1> 
-                Dejanos tus datos 
-                y nos podremos en contacto.
-                </h1>
-            </main>
-            
-            <fieldset class="formulario">
-                <form action="procesar.php" method="post">
-                    <p>
-                    <label for="nombre">Nombre: </label>
-                    <input type="text" name="nombre" placeholder="ingresatunombre"> 
-                    </p>
+        <section class="formulario">  
+        
+            <div class="formu1">
+            <img src="../assets/imagenes/contactoo.jpg" alt="">
+            <h1>Dejanos tus datos y nos pondremos en contacto</h1>
+            </div>
+    
+                <div class="for">
+                        
+                    <div class="for">
+                        <label for="nombre">Nombre: </label>
+                        <input type="text" name="nombre" placeholder="ingresatunombre"> 
+                    </div>
                     
-                    <p>
-                    <label for="Email"> Email:</label>
-                    <input type="email" name="Email" placeholder="ingresatuemail">
-                    </p>
+                    <div class="for">
+                        <label for="Email"> Email:</label>
+                        <input type="email" name="Email" placeholder="ingresatuemail">
+                    </div>
                     
-                    <p>
-                    <label for="telefono"> Telefono:</label>
-                    <input type="tel" name="telefono" placeholder="ingresatutelefono"> 
-                    </p>
+                    <div class="for">
+                        <label for="telefono"> Telefono:</label>
+                        <input type="tel" name="telefono" placeholder="ingresatutelefono"> 
+                    </div>
                     
-                    
-                    <h4>Consulta:</h4>
-                    
-                    <textarea name="comentario" id="" cols="40" rows="10"></textarea>
-                    
-                    <p>
-                    <input type="submit" value="Enviar"> 
-                <p>
-                    <p>
-                        <input type="reset" value="Borrar">
-                        </p>
-                    </form>
-                </fieldset>
-                
+                    <div class="for">
+                        <h4>Dejanos tu consulta</h4>
+                    <textarea name="comentario" id="" cols="30" rows="8"></textarea>
+                    </div>
+                    <input type="submit" value="Enviar">
+        </section>
+
+
                 <section class="ubicacion">
-                <h3>
-            Ubicacion:
-            Morande 801,oficina 1309,
-            Santiago centro.
-                </h3>
+                
+                    <div class="ubi">
+                        <img src="../assets/imagenes/Ubicacion.png" alt="">
+                <h5>Morande 801,oficina 1309,
+                    Santiago centro.</h5>
+                </div>
+
+                <div class="ubi">
+                    <img src="../assets/imagenes/reloj.png" alt="">
+                    <h5>
+                        lunes - domingo : 9:00am a 6:00pm
+                    </h5>
+                </div>
                 </section>
                 
+
+
                 <footer>
                     <div class="redes">
                         <ul>
                             <li>
-                            <a href="https://www.instagram.com/katysbeauty_/?hl=es"> <img src="../assets/imagenes/instagram.png" alt=""></a>
+                                <a href="https://www.instagram.com/katysbeauty_/?hl=es"> <img src="../assets/imagenes/instagram.png" alt=""></a>
                             </li>
                             
                             <li>
@@ -119,10 +117,9 @@
                             </li>
                         </ul>
                     </div>
-                    
                     <div class="creado">
                         <p>Todos los derechos reservados. &copy; Katys Beauty</p>
                     </div>
-                    </footer>
+                </footer>
 </body>
 </html>
