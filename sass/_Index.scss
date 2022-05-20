@@ -20,10 +20,11 @@
     .titulo{
         display: flex;
         justify-content: center;
+        font-size: 35px;
     }
     .logo{
-        width: 200px;
-        height: 180px;
+        width: 250px;
+        height: 200px;
         grid-column: 2/3;
         }
         
@@ -46,6 +47,7 @@
         text-decoration: none;
         color:black;
         cursor: pointer;
+        font-size: 25px;
         }
         .menu-bar{
             display: none;
@@ -59,12 +61,12 @@
     padding: 10px;
         
         h1{
-            font-size: 25px;
+            font-size: 30px;
         }
         
         img{
-            width: 600px;
-            height: 250px;
+            width: 700px;
+            height: 300px;
             padding: 10px;
         }
         
@@ -79,16 +81,20 @@
     .item1 {
         padding: 10px;
         img{
-            width: 400px;
-            height: 260px;
+            width: 550px;
+            height: 280px;
         }
     }
-}
+}           
 
 
 .encabezado{
     text-align: center;
     padding: 25px;
+        
+        h2{
+            font-size: 30px;
+    }
 }
 
 .main{
@@ -101,7 +107,8 @@
         }
         
         .cajas img{
-        width: 200px;
+        width: 250px;
+        height: 190px;
         border-radius: 10px;
         }
         
@@ -131,8 +138,8 @@ footer{
         }
         
         img{
-            height: 40px;
-            width: 35px;
+            height: 60px;
+            width: 55px;
             margin: 10px;
         }
     }
@@ -141,6 +148,7 @@ footer{
             
             p{
                 color: #000000;
+                font-size: 20px;
             }
         }
 }
