@@ -35,11 +35,6 @@
   text-decoration: none;
 }
 
-.fondo {
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .navbar {
   background: linear-gradient(to left, #ee8f97, #eec3c3);
   display: grid;
@@ -122,6 +117,10 @@
   width: 250px;
   height: 190px;
   border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+.main img:hover {
+  transform: scale(1.1);
 }
 .main .cajas p {
   text-align: center;
@@ -170,6 +169,10 @@ footer .creado p {
   width: 250px;
   height: 190px;
   border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+.contenedor img:hover {
+  transform: scale(1.1);
 }
 .contenedor .caja {
   margin: 25px;

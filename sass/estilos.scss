@@ -8,14 +8,9 @@
     text-decoration: none;
 }
 
-.fondo {
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-}
 
 .navbar{
-    background: linear-gradient(to left, #ee8f97, #eec3c3);
+    background: linear-gradient(to left, #ee8f97, #f0c8c8);
     display: grid;
     grid-template-columns: repeat(7,1fr);
     align-items: center;
@@ -112,6 +107,11 @@
         width: 250px;
         height: 190px;
         border-radius: 10px;
+        transition: all 0.3s ease-in-out;
+        }
+
+        img:hover{
+            transform: scale(1.1);
         }
         
         .cajas p{
@@ -171,6 +171,11 @@ footer{
         width: 250px;
         height: 190px;
         border-radius: 10px;
+        transition: all 0.3s ease-in-out;
+        }
+
+        img:hover{
+            transform: scale(1.1);
         }
         
         .caja{
@@ -228,6 +233,7 @@ footer{
         } 
 }
 
+    //Responsive//
 @media  screen and(max-width:900px){
 
     .navbar{
@@ -429,7 +435,7 @@ footer{
 }
 
 
-@media  screen and (max-width: 400px) {
+@media  screen and (max-width:400px) {
     /*index*/
 
     .navbar{
@@ -555,5 +561,3 @@ footer{
 }
 
 }
-
-
