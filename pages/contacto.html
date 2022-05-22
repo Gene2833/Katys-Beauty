@@ -16,98 +16,86 @@
     <!--CSS-->
     <link rel="stylesheet" href="../css/estilos.css">
     <!--Titulo de la pagina-->
-    <title>Katys beauty-Nosostros</title>
+    <title>Katys beauty-contacto</title>
 </head>
 <body>
+
     <header>
         <nav class="navbar">
-            <h1 class="titulo">ESTETICA Y SPA</h1>
-                <a href="../index.html"><img class="logo" src="../assets/logo/Logokatys.png" alt="logo"></a>
-            <ul class="menu" >
-                <li>
-                    <a href="Nosotros.html">Nosotros</a>
-                </li>
+                <a href="../index.html"><img class="logo" src="../assets/logo/Logokatys.png"></a>
+                <ul class="menu" >
+                        <li><a href="Nosotros.html">Nosotros</a></li>
+                        <li><a href="tratamientosfaciales.html">Tratamientos Faciales</a></li>
+                        <li><a href="tratamientoscor.html">Tratamientos Corporales</a></li>
+                        <li><a href="contacto.html">Contacto</a> </li>
+                </ul> 
                 
-                <li>
-                    <a href="tratamientosfaciales.html">Tratamiento faciales</a>
-                </li>
+                <div class="menu-bar">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
                 
-                <li>
-                    <a href="tratamientoscor.html">Tratamientos corporales</a>
-                </li>
+                <div class="shop">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
                 
-                <li>
-                    <a href="contacto.html">Contacto</a> 
-                </li>
-            </ul> 
-            
-            <div class="menu-bar">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-            
-            <div class="shop">
-                <i class="fa-solid fa-cart-shopping"></i>
-            </div>
-            
         </nav>
     </header>
+
+    <section class="formulario">  
         
-        <main class="Inicio">
-            <img src="../assets/imagenes/contacto1.jpg" alt="">
-        </main>
-        
-        <!--Formulario-->
-        <main class="contacto">
-            <h1> 
-                Dejanos tus datos 
-                y nos podremos en contacto.
-                </h1>
-            </main>
+        <div class="for">
+            <img src="../assets/imagenes/contactoo.jpg" alt="">
+            <h1>Dejanos tus datos y nos pondremos en contacto</h1>
+        </div>
+    
+        <div class="for">
+                        
+            <div class="for">
+                <label for="nombre">Nombre: </label>
+                <input type="text" name="nombre"> 
+            </div>
             
-            <fieldset class="formulario">
-                <form action="procesar.php" method="post">
-                    <p>
-                    <label for="nombre">Nombre: </label>
-                    <input type="text" name="nombre" placeholder="ingresatunombre"> 
-                    </p>
-                    
-                    <p>
-                    <label for="Email"> Email:</label>
-                    <input type="email" name="Email" placeholder="ingresatuemail">
-                    </p>
-                    
-                    <p>
-                    <label for="telefono"> Telefono:</label>
-                    <input type="tel" name="telefono" placeholder="ingresatutelefono"> 
-                    </p>
-                    
-                    
-                    <h4>Consulta:</h4>
-                    
-                    <textarea name="comentario" id="" cols="40" rows="10"></textarea>
-                    
-                    <p>
-                    <input type="submit" value="Enviar"> 
-                <p>
-                    <p>
-                        <input type="reset" value="Borrar">
-                        </p>
-                    </form>
-                </fieldset>
-                
+            <div class="for">
+                <label for="Email"> Email:</label>
+                <input type="text" name="Email">
+            </div>
+            
+            <div class="for">
+                <label for="telefono"> Telefono:</label>
+                <input type="text" name="telefono"> 
+            </div>
+            
+            <div class="for">
+                <h4>Dejanos tu consulta:</h4>
+            <textarea name="comentario"></textarea>
+            </div>
+            <input type="submit" value="Enviar">
+    </section>
+
+
                 <section class="ubicacion">
-                <h3>
-            Ubicacion:
-            Morande 801,oficina 1309,
-            Santiago centro.
-                </h3>
+                
+                    <div class="ubi">
+                        <img src="../assets/imagenes/Ubicacion.png" alt="">
+                <h5>Morande 801,oficina 1309,
+                    Santiago centro.</h5>
+                </div>
+
+                <div class="ubi">
+                    <img src="../assets/imagenes/reloj.png" alt="">
+                    <h5>
+                        lunes - domingo : 9:00am a 6:00pm
+                    </h5>
+                </div>
                 </section>
                 
+
+
                 <footer>
                     <div class="redes">
                         <ul>
                             <li>
-                            <a href="https://www.instagram.com/katysbeauty_/?hl=es"> <img src="../assets/imagenes/instagram.png" alt=""></a>
+                                <a href="https://www.instagram.com/katysbeauty_/?hl=es"> <img src="../assets/imagenes/instagram.png" alt=""></a>
                             </li>
                             
                             <li>
@@ -119,10 +107,9 @@
                             </li>
                         </ul>
                     </div>
-                    
                     <div class="creado">
                         <p>Todos los derechos reservados. &copy; Katys Beauty</p>
                     </div>
-                    </footer>
+                </footer>
 </body>
 </html>
