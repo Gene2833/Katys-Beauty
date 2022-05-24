@@ -1,53 +1,29 @@
-//nosostros//
+//variables//
+$width: 400px; 
+$height: 350px;
 
-.principal{
+
+.nosotros{
+    padding: 20px;
+    margin: 10px;
     text-align: center;
-    
-    .principal h2{
-        text-align: center;
-        padding: 10px;
+}
+@mixin sizes($width, $height) {
+    height: $height;
+    width: $width;
     }
-    
-    .principal p{
-        text-align: center;
-        color: black;
-    }
-} 
 
-
-@mixin flex-nowrap{
-        display:flex;
-        flex-wrap: nowrap;
-    }
-.containerc {
-    @include flex-nowrap;
-    }
-    
-    
-    
-//map//
-$map: (
-    tFuente: 20px,
-    relleno: 25px,
-    espaciado: 20px,
-    ancho: 50%,
-    pand: 20px,
-);
-
-.tarjeta__nosotros{
-    font-size: map-get($map, tFuente);
-    margin: map-get($map, espaciado);
-    width: map-get($map, ancho);
-    padding: map-get($map, pand);
-    }
-    
-.tarjeta__img{
-    width: 300px;
-    border-radius: 10px;
-    text-align: center
+.nosotros1 img{
+    @include sizes(400px, 350px);
+    border-radius: 15px;
+    margin: 15px;
+    box-shadow: 15px 15px 15px #00000095;
 }
 
-//extend//
-.tarjeta__Katys{
-    @extend .tarjeta__nosotros;
+h1{
+    text-align: center;
+    font-size: 25px;
+    margin: 15px;
+    padding: 10px;
 }
+
