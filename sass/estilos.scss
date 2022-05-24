@@ -8,47 +8,65 @@
     text-decoration: none;
 }
 
+//index//
+.logo{
+    display: flex;
+    flex-direction: column-reverse;
+    align-content: space-around;
+    flex-wrap: wrap;
 
-.navbar{
-    background: linear-gradient(to left, #ee8f97, #f0c8c8);
-    display: grid;
-    grid-template-columns: repeat(7,1fr);
-    align-items: center;
-    
-    .titulo{
+    img{
+        width: 250px;
+        height: 200px;
+    }   
+        
+    h1{
+            font-size: 35px;
+            text-align: center;
+    } 
+}
+
+header{
+    width: 100%;
+    background-color: #ee8f97;
+        
+
+    #btn-menu{
         display: none;
     }
 
-    .logo{
-        width: 150px;
-        height: 130px;
-        grid-column: 2/3;
+    label img{
+        display: none;
+        width: 50px;
+        height: 50px;
+        padding: 10px;
+        
         }
-
+        
         .menu{
-            display: flex;
-            justify-content: space-around;
-            grid-column: 3/6;
-        }
+            background-color: #ee8f97;
 
-        li{
+            ul{
             list-style: none;
-        }
+            display: flex;
+            justify-content: center;
 
-        a{
-            text-decoration: none;
-            color:black;
-            cursor: pointer;
+            li{
+                list-style: none;
+
+                a{
+                    display: block;
+                    padding: 15px 20px;
+                    cursor: pointer;
+                    color: black;
+                    font-size: 20px;
+                }
             }
-
-        .menu-bar{
-            display: none;
         }
-
-        .shop{
-            grid-column: 7/8;
         }
-    }
+        
+
+}
 
 .item{
     text-align: center;
@@ -231,4 +249,151 @@ footer{
         h5{
             font-size: 20px;
         } 
+}
+
+
+
+@media (max-width:900px) {
+    header label img{
+    display: block;
+    }
+    .menu{
+    position: absolute;
+    background-color: #ee8f97;
+    width: 70%;
+    margin-left: -70%;
+    transition: all 0.5s;
+    }
+    
+    .menu ul{
+    flex-direction: column;
+    }
+
+        .menu li{
+        color:#ee8f97;
+    }
+
+    .menu a{
+        font-size: 15px;
+        color: black;
+    }
+    
+    #btn-menu:checked ~.menu{
+    margin: 0;
+    }
+}
+
+
+@media (max-width:400px) {
+    /*index*/
+    .logo img{
+        width: 230px;
+        height: 240px;
+    }
+
+    .logo h1{
+        font-size: 35px;
+        color:#ee8f97;
+    }
+    /*Contenido*/
+    .item{
+        padding: 10px;
+    }
+    
+    .item h1{
+        font-size: 20px;
+    }
+    
+    .item img{
+        width: 350px;
+        height: 200px
+    }
+    
+    .encabezado h2{
+        font-size: 18px;
+    }
+    
+    .items .item1 img{
+        width: 140px;
+        height: 120px;
+    }
+    
+    .main{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .main .cajas img{
+        width: 110px;
+        height: 130px;
+    }
+    
+    .main .cajas p{
+        font-size: 10px;
+    }
+    
+    /*footer*/
+    footer .redes img{
+        width: 35px;
+        height: 35px;
+    }
+    
+    footer .creado p{
+        font-size: 16px;
+    }
+    
+/*Tratamientos faciales y corporales*/
+.servicio{
+    text-align: center;
+}
+.servicio h1{
+    font-size: 24px;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: center
+}
+.contenedor .caja img{
+    width: 180px;
+    height: 150px;
+    border-radius: 5px;
+}
+
+.contenedor .caja p{
+    font-size: 20px;
+}
+
+/*Contacto*/
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario .for img{
+    width: 200px;
+    height: 150px;
+    padding: 10px;
+}
+
+.formulario .for h1{
+    font-size: 20px;
+}
+
+.ubicacion{
+    display: flex;
+    flex-direction: column;
+}
+
+.ubicacion .ubi img{
+    width: 70px;
+    height: 65px;
+}
+
+.ubicacion .ubi h5{
+    font-size: 20px;
+    padding: 15px;
+}
+
 }
