@@ -234,7 +234,18 @@ footer .creado p {
 }
 
 @media (max-width: 900px) {
+  .logo img {
+    width: 330px;
+    height: 250px;
+  }
+
+  .logo h1 {
+    font-size: 40px;
+  }
+
   header label img {
+    width: 60px;
+    height: 60px;
     display: block;
   }
 
@@ -255,19 +266,179 @@ footer .creado p {
   }
 
   .menu a {
-    font-size: 15px;
+    font-size: 20px;
     color: black;
   }
 
   #btn-menu:checked ~ .menu {
     margin: 0;
   }
+
+  .item h1 {
+    font-size: 35px;
+    padding: 10px;
+  }
+
+  .items .item1 img {
+    width: 370px;
+    height: 220px;
+  }
+
+  .encabezado h2 {
+    font-size: 30px;
+  }
+
+  .main {
+    display: flex;
+    justify-content: center;
+  }
+
+  /*TRATAMIENTOS FACIALES Y CORPORALES*/
+  .contenedor {
+    display: flex;
+    justify-content: center;
+  }
+
+  /*Contacto*/
+  .formulario .for img {
+    width: 340px;
+    height: 280px;
+  }
+
+  .formulario .for h4 {
+    font-size: 30px;
+  }
+
+  .formulario .for h1 {
+    font-size: 40px;
+  }
+
+  .formulario .for input[type=text] {
+    width: 180px;
+    height: 30px;
+  }
+
+  .formulario .for textarea {
+    width: 300px;
+    height: 150px;
+  }
+
+  .formulario .for input[type=submit] {
+    width: 150px;
+    height: 30px;
+    background-color: #ee8f97;
+    border-radius: 10px;
+  }
+
+  .ubicacion .ubi img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .ubicacion .ubi h5 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 600px) {
+  .logo {
+    padding: 10px;
+  }
+
+  .logo img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .logo h1 {
+    font-size: 45px;
+    color: #e9838b;
+    padding: 10px;
+  }
+
+  /*CONTENIDO*/
+  .item h1 {
+    font-size: 35px;
+    padding: 10px;
+  }
+
+  .item img {
+    width: 450px;
+    height: 250px;
+  }
+
+  .items .item1 img {
+    width: 250px;
+    height: 200px;
+  }
+
+  .encabezado h2 {
+    font-size: 35px;
+  }
+
+  .main .cajas img {
+    width: 200px;
+    height: 180px;
+  }
+
+  .main .cajas p {
+    font-size: 22px;
+  }
+
+  /*Contacto*/
+  .formulario {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .formulario .for img {
+    width: 330px;
+    height: 200px;
+  }
+
+  .formulario .for h1 {
+    font-size: 30px;
+  }
+
+  .formulario .for {
+    font-size: 25px;
+  }
+
+  .formulario .for input[type=text] {
+    width: 150px;
+    height: 25px;
+  }
+
+  .formulario .for textarea {
+    width: 250px;
+    height: 110px;
+  }
+
+  .formulario .for input[type=submit] {
+    width: 90px;
+    height: 30px;
+    background-color: #ee8f97;
+    border-radius: 10px;
+  }
+
+  .formulario .for h4 {
+    font-size: 25px;
+  }
+
+  .ubicacion .ubi h5 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .ubicacion .ubi img {
+    width: 70px;
+    height: 70px;
+  }
 }
 @media (max-width: 400px) {
   /*index*/
   .logo img {
-    width: 230px;
-    height: 240px;
+    width: 250px;
+    height: 250px;
   }
 
   .logo h1 {
@@ -281,7 +452,8 @@ footer .creado p {
   }
 
   .item h1 {
-    font-size: 20px;
+    font-size: 25px;
+    padding: 10px;
   }
 
   .item img {
@@ -290,7 +462,7 @@ footer .creado p {
   }
 
   .encabezado h2 {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .items .item1 img {
@@ -309,7 +481,7 @@ footer .creado p {
   }
 
   .main .cajas p {
-    font-size: 10px;
+    font-size: 13px;
   }
 
   /*footer*/
