@@ -165,8 +165,12 @@ footer .creado p {
 }
 
 .servicio {
+  display: flex;
+  flex-direction: row;
+}
+.servicio h1 {
   padding: 30px;
-  font-size: 20px;
+  font-size: 40px;
 }
 
 .contenedor {
